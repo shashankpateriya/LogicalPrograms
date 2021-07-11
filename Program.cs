@@ -11,6 +11,7 @@ namespace LogicalProblems
             Console.WriteLine("Press 2. for PerfectNumber.");
             Console.WriteLine("Press 3. for ReverseNumber.");
             Console.WriteLine("Press 4. for PrimeNumber.");
+            Console.WriteLine("Press 5. for StopWatch.");
             Console.WriteLine("Enter a choice : ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +32,10 @@ namespace LogicalProblems
                 case 4:
                     Prime prime = new Prime();
                     prime.PrimeNumber();
+                    break;
+                case 5:
+                    StopWatch stopWatch = new StopWatch();
+                    StopWatch.SWatch();
                     break;
                 default:
                     Console.WriteLine("invalid choice");
